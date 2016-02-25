@@ -11,6 +11,7 @@ public class StackActivity extends AppCompatActivity
 {
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -25,6 +26,8 @@ public class StackActivity extends AppCompatActivity
         this.getSupportFragmentManager().beginTransaction().add(R.id.tower3, TOHCore.tower3).commit();
 
 
+
+
     }
 
     @Override
@@ -36,5 +39,20 @@ public class StackActivity extends AppCompatActivity
         TOHCore.tower1.addDisk(10);
     }
 
+    public void towerButtonClicked(TowerFragment Tower)
+    {
+        if(Tower == TOHCore.tower1)
+        {
+            System.out.println("Tower 1 button clicked");
+        }
+        else if(Tower == TOHCore.tower2)
+        {
+            System.out.println("Tower 2 button clicked");
+        }
+        else if(Tower == TOHCore.tower3)
+        {
+            System.out.println("Tower 3 button clicked");
+        }
+    }
 }
 

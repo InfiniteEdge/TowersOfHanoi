@@ -38,15 +38,6 @@ public class TowerFragment extends Fragment
             {
                 TOHCore.toggleTowerButtons(myself);
 
-                if()
-                {
-                    System.out.println("Button has been pushed");
-                    TOHCore.tower3.addDisk(5);
-                }
-
-
-
-
             }
         });
         return this.towerView;
